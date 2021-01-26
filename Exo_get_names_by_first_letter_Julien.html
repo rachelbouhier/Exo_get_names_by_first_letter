@@ -7,18 +7,22 @@
 </head>
 <body>
     <script>
-        function get_names_by_first_letter (list, letter) {
-
-}
-        const list = ['Marie', 'Yazdan', 'Nolwenn', 'Gebril', 'Marie', 'Alex', 'Alina',
+        const list = ['Marie', 'Yazdan', 'Nolwenn', 'Gebril', 'Marie', 'Noha', 'Alex', 'Alina',
                     'Camille' ,'Juliette', 'Laura' , 'Noha' , 'Rachel', 'Sara', 'Thomas']
-            for (let index = 0; index < list.length; index++) {
-                //list [index] = list[index].charAT("Y")
-                console.log(list[0])
-                
-                
-            }
 
+        function get_names_by_first_letter (list, letter) {
+            let names = []
+            for (let index = 0; index < list.length; index++) {
+            if (list[index].charAt(0) == letter)
+                names.push(list[index])
+            }     
+            return names
+        }
+        
+
+              
+        
+    console.log(get_names_by_first_letter(list,"M"))
         
     </script>
     
